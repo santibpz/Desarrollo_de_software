@@ -9,6 +9,7 @@ import AgentHome from "./pages/AgentHome";
 import ProfileComponent from "./pages/ProfileTest";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import HomePage from "./pages/AgentMain";
 
 function App() {
 
@@ -20,6 +21,8 @@ function App() {
       <Route path="/signin" element={<SignIn />} />
       <Route path="/agent/home" element={<AgentHome />} />
       <Route path="/profileTest" element={<ProfileComponent />} />
+      <Route path="/home" element={<HomePage />} />
+
     </Routes>
      <ToastContainer />
      </>
