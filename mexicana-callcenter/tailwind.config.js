@@ -17,6 +17,7 @@ module.exports = {
       },
       borderRadius: {
         "3xs": "10px",
+        'xl': '1rem',
       },
     },
     fontSize: {
@@ -37,7 +38,12 @@ module.exports = {
       mq450: {
         raw: "screen and (max-width: 450px)",
       },
-    },
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1536px"
+      },
   },
   corePlugins: {
     preflight: false,
