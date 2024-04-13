@@ -8,7 +8,7 @@ module.exports = {
         primary: "#20253f",
         slategray: "#545973",
         tertiary: "#f8f9fa",
-        'custom-green':"rgba(24,124,67,1)",
+        'customGreen':"rgba(24,124,67,1)",
         marco: "rgba(32, 37, 63, 0.5)",
         black: "#000",
       },
