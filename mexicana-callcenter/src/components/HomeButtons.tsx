@@ -8,10 +8,10 @@ interface HomeButtonProps {
 
 const HomeButton: React.FC<HomeButtonProps> = ({ icon, title, subtitle }) => {
   return (
-    <button className="flex items-center space-x-2 bg-primary text-white font-paragraph py-4 px-6 rounded-3xs shadow-md hover:bg-green-600 transition-colors duration-300 ease-in-out">
+    <button className="flex items-center px-6 py-4 space-x-2 font-light text-white transition-colors duration-300 ease-in-out shadow-md bg-primary font-roboto rounded-3xs hover:bg-green-600">
       <img src={icon} alt="Icon" className="h-full" /> 
       <div>
-        <div className="sm:text-sm lg:text-xl">{title}</div> 
+        <div className="font-thin sm:text-sm font-roboto lg:text-3xl">{title}</div> 
         <div className="text-sm text-slategray">{subtitle}</div>
       </div>
     </button>
@@ -19,3 +19,5 @@ const HomeButton: React.FC<HomeButtonProps> = ({ icon, title, subtitle }) => {
 };
 
 export default HomeButton;
+
+

@@ -8,12 +8,14 @@ module.exports = {
         primary: "#20253f",
         slategray: "#545973",
         tertiary: "#f8f9fa",
+        'custom-green':"rgba(24,124,67,1)",
         marco: "rgba(32, 37, 63, 0.5)",
         black: "#000",
       },
       spacing: {},
       fontFamily: {
-        paragraph: "Inter",
+        paragraph: ['Inter', 'sans-serif'],
+        roboto: ['Roboto', 'sans-serif'],
       },
       borderRadius: {
         "3xs": "10px",
@@ -24,6 +26,7 @@ module.exports = {
       lg: "18px",
       "41xl": "60px",
       inherit: "inherit",
+      "3xl": "30px",
     },
     screens: {
       lg: {
@@ -49,3 +52,4 @@ module.exports = {
     preflight: false,
   },
 };
+
