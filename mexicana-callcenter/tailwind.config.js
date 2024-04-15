@@ -40,18 +40,19 @@ module.exports = {
       "p2": "35px",
     },
     screens: {
-      lg: {
-        max: "1200px",
-      },
-      mq1050: {
-        raw: "screen and (max-width: 1050px)",
-      },
-      mq750: {
-        raw: "screen and (max-width: 750px)",
-      },
-      mq450: {
-        raw: "screen and (max-width: 450px)",
-      },
+      // lg: {
+      //   max: "1200px",
+      // },
+      // mq1050: {
+      //   raw: "screen and (max-width: 1050px)",
+      // },
+      // mq750: {
+      //   raw: "screen and (max-width: 750px)",
+      // },
+      // mq450: {
+      //   raw: "screen and (max-width: 450px)",
+      // },
+      '2sm': '320px',
       sm: "640px",
       md: "768px",
       lg: "1024px",
@@ -60,7 +61,7 @@ module.exports = {
       },
   },
   corePlugins: {
-    preflight: false,
+    preflight: true,
   },
 };
 

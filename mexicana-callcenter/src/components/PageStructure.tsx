@@ -28,9 +28,9 @@ interface PageStructureProps {
   }, []);
 
   return (
-    <div className="flex flex-col h-screen sm:overflow-hidden pl-2 pr-2">
+    <div className="flex flex-col h-screen pl-2 pr-2 sm:overflow-hidden">
       {/* Top bar */}
-      <div className="flex h-20 bg-tertiary shadow-lg justify-between items-center p-4">
+      <div className="flex items-center justify-between h-20 p-4 shadow-lg bg-tertiary">
         <div>
           <img 
             src="/logo_callCenter_color.png"  
@@ -46,7 +46,7 @@ interface PageStructureProps {
           />
           <div className="flex items-center">
             <h1 className="font">{title}</h1>
-            <div className="mx-2 h-6 border-l-2"></div> {/* Divisory line */}
+            <div className="h-6 mx-2 border-l-2"></div> {/* Divisory line */}
           </div>
         </div>
       </div>
@@ -55,7 +55,7 @@ interface PageStructureProps {
         {children}
       </div>
       {/* Bottom bar */}
-      <div className="h-20 bg-tertiary shadow-lg flex justify-center items-center p-4">
+      <div className="flex items-center justify-center h-20 p-4 shadow-lg bg-tertiary">
           <p className = "font2" > {timestamp} </p>
       </div>
     </div>
