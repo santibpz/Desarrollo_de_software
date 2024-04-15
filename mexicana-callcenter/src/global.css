@@ -28,3 +28,39 @@ body {
   left: 0;
   width: 100%; /* This will span the entire width of the container */
 }
+
+h1 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 73px;
+  /* identical to box height */
+  text-align: center;
+  color: #20253F;
+}
+
+h2  {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  color: #000000;
+
+}
+
+.p2 {
+  @apply text-p2 font-paragraph2 leading-p2
+}
+
+p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #20253F;
+
+}
+

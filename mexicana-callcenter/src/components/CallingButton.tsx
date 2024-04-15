@@ -13,11 +13,11 @@ const GradientButton: React.FC<GradientButtonProps> = ({ mode }) => {
     : "bg-green-600";
 
   return (
-    <button className={`relative flex items-center w-full px-10 py-10 mt-3 space-x-2 text-white transition ease-in-out duration-300 shadow-md rounded-xl ${backgroundClass} hover:opacity-75`}>
+    <button className={`relative flex items-center justify-center w-full px-10 py-10 mt-3 space-x-2 text-white transition ease-in-out duration-300 shadow-md rounded-xl ${backgroundClass} hover:opacity-75`}>
       {mode === 'workspace' && (
-        <img src="/MetricsSymbol.svg" alt="Icon" className="w-6 h-6 mr-4" />
+        <img src='./phone.svg' alt="phone" className="items-center mr-1" />
       )}
-      <div className="flex-grow">
+      <div className="text-center">
         <div className={`font-roboto text-3xl`}>{buttonText}</div> 
         {mode === 'workspace' && (
           <div className="text-sm text-white font-roboto">{buttonSubtitle}</div>

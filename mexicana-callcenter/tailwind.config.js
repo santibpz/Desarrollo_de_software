@@ -16,6 +16,7 @@ module.exports = {
       fontFamily: {
         paragraph: ['Inter', 'sans-serif'],
         roboto: ['Roboto', 'sans-serif'],
+        "paragraph2": ['Roboto'],
       },
       borderRadius: {
         "3xs": "10px",
@@ -27,6 +28,16 @@ module.exports = {
       "41xl": "60px",
       inherit: "inherit",
       "3xl": "30px",
+      subtitle: "40px",
+      "p2":"30px"
+    },
+    fontWeight: {
+      subtitle: 100,
+      "p2": 300,
+    },
+    lineHeight: {
+      subtitle: "60px",
+      "p2": "35px",
     },
     screens: {
       lg: {

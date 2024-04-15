@@ -28,7 +28,7 @@ interface PageStructureProps {
   }, []);
 
   return (
-    <div className="flex flex-col h-screen overflow-hidden">
+    <div className="flex flex-col h-screen sm:overflow-hidden pl-2 pr-2">
       {/* Top bar */}
       <div className="flex h-20 bg-tertiary shadow-lg justify-between items-center p-4">
         <div>
@@ -51,7 +51,7 @@ interface PageStructureProps {
         </div>
       </div>
       {/* Main content */}
-      <div className="flex h-[90%]">
+      <div className="flex h-[90%] w-[98%] items-center justify-center">
         {children}
       </div>
       {/* Bottom bar */}
