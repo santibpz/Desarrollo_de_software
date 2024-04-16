@@ -30,23 +30,23 @@ interface PageStructureProps {
   return (
     <div className="flex flex-col h-screen pl-2 pr-2 sm:overflow-hidden">
       {/* Top bar */}
-      <div className="flex items-center justify-between h-20 p-4 shadow-lg bg-tertiary">
+      <div className="flex items-center justify-between h-20  shadow-lg bg-tertiary"> 
         <div>
           <img 
             src="/logo_callCenter_color.png"  
             alt="" 
-            className="w-[230px] ml-3"
+            className=" w-[115px] sm:w-[230px] ml-3"
           />
         </div>
-        <div className="flex items-center">
+        <div className="flex items-center justify-center ">
           <img 
             src="/notifications_iconn.png" 
             alt="" 
-            className="w-[45px] mr-2"
+            className="w-[30px] sm:w-[45px] mr-2"
           />
+          <div className="h-10 mx-2 border-l-2 border-primary"></div> {/* Divisory line */}
           <div className="flex items-center">
             <h1 className="font">{title}</h1>
-            <div className="h-6 mx-2 border-l-2"></div> {/* Divisory line */}
           </div>
         </div>
       </div>
@@ -63,3 +63,4 @@ interface PageStructureProps {
 };
 
 export default PageStructure;
+
