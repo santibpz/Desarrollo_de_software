@@ -35,11 +35,9 @@ const WorkerCard: React.FC<WorkerCardProps> = ({ name, position, years, points, 
       </div>
 
       {/* Small Device Layout */}
-      <div className="overflow-hidden bg-white border border-gray-300 rounded-lg 2sm:p-2 md:hidden">
+      <div className="pt-40 overflow-hidden bg-white border border-gray-300 rounded-lg  2sm:p-2 md:hidden">
         <div className="text-center">
           <p>{name}</p>
-          <p className="text-sm text-gray-600">{position}</p>
-          <p className="text-xs text-gray-500">{years} years</p>
           <button className={`${statusClass} text-white font-bold py-1 px-2 rounded-lg w-full`}>
             {status}
           </button>

@@ -30,7 +30,7 @@ interface PageStructureProps {
   return (
     <div className="flex flex-col h-screen pl-2 pr-2 sm:overflow-hidden">
       {/* Top bar */}
-      <div className="flex items-center justify-between h-20  shadow-lg bg-tertiary"> 
+      <div className="flex items-center justify-between h-[10%] shadow-lg bg-tertiary"> 
         <div>
           <img 
             src="/logo_callCenter_color.png"  

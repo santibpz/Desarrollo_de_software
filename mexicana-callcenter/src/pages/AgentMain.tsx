@@ -1,8 +1,23 @@
 import { useState, useEffect } from 'react';
 import PageStructure from "../components/PageStructure";
 import HomeButton from "../components/HomeButtons";
-import GradientButton from "../components/CallingButton";  // Ensure this is imported correctly
+import GradientButton from "../components/CallingButton"; 
 import WorkerCard from '../components/WorkerCard';
+
+const handleMetricsButton = () => {
+  window.location.href = '/Metrics'; 
+};
+const handleAgentSpotlightButton = () => {
+  window.location.href = '/AgentSpotlight'; 
+};
+const handleBadgeButton = () => {
+  window.location.href = '/badges'; 
+};
+
+const handleBreaksButton = () => {
+  window.location.href = '/Breaks'; 
+};
+
 
 const MainContent = () => {
   const [buttonMode, setButtonMode] = useState('workspace');
@@ -22,10 +37,10 @@ const MainContent = () => {
       <div className="flex flex-col col-span-12 md:col-span-8">
         <div className="flex-1 p-8 border-2 border-gray-400 bg-tertiary border-black-500 home-button rounded-xl">
           <div className="grid h-full gap-8 mx-auto md:grid-cols-2">
-            <HomeButton icon="/MetricsSymbol.svg" title="My Metrics" subtitle="See the real time metrics for all the agents" />
-            <HomeButton icon="/SpotlightSymbol.svg" title="Agent Spotlight" subtitle="Weekly best agents" />
-            <HomeButton icon="/BadgesSymbol.svg" title="My Badges" subtitle="See all the awards and badges earned" />
-            <HomeButton icon="/BreakSymbol.svg" title="Take a break" subtitle="Go to take a break to clear the mind" />
+            <HomeButton icon="/MetricsSymbol.svg" title="My Metrics" subtitle="See the real time metrics for all the agents" handleClick={handleMetricsButton}/>
+            <HomeButton icon="/SpotlightSymbol.svg" title="Agent Spotlight" subtitle="Weekly best agents" handleClick={handleAgentSpotlightButton}/>
+            <HomeButton icon="/BadgesSymbol.svg" title="My Badges" subtitle="See all the awards and badges earned" handleClick={handleBadgeButton} />
+            <HomeButton icon="/BreakSymbol.svg" title="Take a break" subtitle="Go to take a break to clear the mind" handleClick={handleBreaksButton}/>
           </div>
         </div>
         <GradientButton text="Call Next Customer"
