@@ -1,6 +1,7 @@
 
 import { useState } from 'react';
 import { useAuth } from "../hooks/useAuth"; // Adjust the import path as necessary
+import { Link } from 'react-router-dom';
 
 function SettingsButton() {
     const [isActive, setIsActive] = useState(false);
@@ -24,7 +25,9 @@ function SettingsButton() {
             {isActive && (
                 <div className="absolute right-0 w-48 py-2 mt-2 bg-white rounded-md shadow-xl">
                     <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Modes</a>
+                  
                     <button onClick={handleLogout} className="block w-full px-4 py-2 text-sm text-left text-gray-700 hover:bg-gray-100">Logout</button>
+                
                 </div>
             )}
         </div>
