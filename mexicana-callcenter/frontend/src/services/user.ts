@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const baseUrl = 'http://localhost:3000'
+const baseUrl = 'https://10oti6hpbf.execute-api.us-east-1.amazonaws.com/dev'
 
 const GetInfo = (userRole:string, username:string) => {
     const config = { // set headers
