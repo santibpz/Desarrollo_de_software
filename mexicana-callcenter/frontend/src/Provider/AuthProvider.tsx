@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { AuthContextType, Credentials } from "../utils/interfaces";
 import useCustomToast from "../components/LoginNotification";
 
-const baseUrl = 'http://localhost:3000'
+const baseUrl = 'https://10oti6hpbf.execute-api.us-east-1.amazonaws.com/dev'
 
 export const AuthContext = createContext<AuthContextType | null>(null);
 
